@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Preparate EGEL</string>
-
+    <string name="titulo_app">Preparate</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_menu">Menu</string>
 </resources>
