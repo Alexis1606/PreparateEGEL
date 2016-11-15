@@ -27,7 +27,13 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Menu"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".ExamenRapido" />
+        <activity android:name=".ExamenCompleto" />
+        <activity
+            android:name=".Config"
+            android:label="@string/title_activity_config" />
+        <activity android:name=".Retro"></activity>
     </application>
 
 </manifest>

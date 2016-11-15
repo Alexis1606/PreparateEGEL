@@ -236,4 +236,5 @@ public class FullscreenActivity extends AppCompatActivity {
         super.onPause();
         finish();
     }
+
 }
