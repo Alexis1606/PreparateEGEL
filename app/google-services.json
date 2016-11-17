@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "636428657790-giluuk0kvc61n3om5206sq43dtfgfre2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "calejo.preparateegel",
+            "certificate_hash": "8525E055D53CA6CAC736FCF9D684DB7DCC3F9D27"
+          }
+        },
+        {
           "client_id": "636428657790-sgb4or2suki2ic2sra9olic0u72rqld7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

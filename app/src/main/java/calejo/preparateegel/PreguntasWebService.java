@@ -1,7 +1,10 @@
 package calejo.preparateegel;
 
+<<<<<<< HEAD
 import android.os.StrictMode;
 
+=======
+>>>>>>> origin/master
 import java.util.StringTokenizer;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,6 +19,7 @@ import java.net.URLEncoder;
 
 public class PreguntasWebService {
 
+<<<<<<< HEAD
     public int id;
     public String preguntaM;
     public String respuesta1;
@@ -98,6 +102,11 @@ public class PreguntasWebService {
 
     /*
     private static class StringTokenizerExample {
+=======
+    static String pregunta = "";
+
+    public static class StringTokenizerExample {
+>>>>>>> origin/master
         public static void main(String args[]) { // creating TestStringTokenizer
             // object.
             JavaHttpUrlConnectionReader();
@@ -108,17 +117,28 @@ public class PreguntasWebService {
         }
 
     }
+<<<<<<< HEAD
 */
 
 
     private void displayTokens() {
 
+=======
+
+    StringTokenizer str = new StringTokenizer(pregunta, "|");
+
+    public void displayTokens() {
+>>>>>>> origin/master
         while (str.hasMoreTokens()) {
             System.out.println(str.nextToken());
         }
     }
 
+<<<<<<< HEAD
     private static void JavaHttpUrlConnectionReader() {
+=======
+    public static void JavaHttpUrlConnectionReader() {
+>>>>>>> origin/master
         try {
             String myUrl = "http://ec2-54-86-71-49.compute-1.amazonaws.com/Pipes.php?sql=SELECT%20*%20FROM%20preguntas%20order%20by%20rand()%20limit%201;&server=alexis.c2g7lahthau8.us-east-1.rds.amazonaws.com&user=preparate&password=Pr3p4r4t3!&dataBase=preparate";
             // if your url can contain weird characters you will want to
@@ -149,8 +169,6 @@ public class PreguntasWebService {
 
             // give it 15 seconds to respond
             connection.setReadTimeout(15 * 1000);
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
             connection.connect();
 
             // read the output from the server
