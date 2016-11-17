@@ -30,13 +30,13 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".Menu" />
-        <activity android:name=".ExamenRapido" />
-        <activity android:name=".ExamenCompleto" />
+        <activity android:name=".ExamenRapido" android:noHistory="true" />
+        <activity android:name=".ExamenCompleto" android:noHistory="true"/>
         <activity
             android:name=".Config"
             android:label="@string/title_activity_config" />
         <activity android:name=".Retro" />
-        <activity android:name=".Sorpresa"><!-- ATTENTION: This intent was auto-generated. Follow instructions at
+        <activity android:name=".Sorpresa" android:noHistory="true"><!-- ATTENTION: This intent was auto-generated. Follow instructions at
   https://g.co/AppIndexing/AndroidStudio to publish your URLs. -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
