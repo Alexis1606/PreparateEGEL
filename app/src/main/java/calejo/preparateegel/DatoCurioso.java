@@ -7,6 +7,10 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
+
+
+import java.sql.ResultSet;
 
 public class DatoCurioso extends AppCompatActivity {
 
@@ -25,11 +29,13 @@ public class DatoCurioso extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        Intent intent = new Intent();
+        intent.putExtra("edittextvalue","value_here");
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
-    Intent intent = new Intent();
-    //intent.putExtra("edittextvalue","value_here")
-    //setResult(RESULT_OK, intent);
-  //  finish();
+
 
 }

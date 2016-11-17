@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import static android.R.attr.data;
+import static android.R.attr.delay;
 import static calejo.preparateegel.PreguntasWebService.pregunta;
 
 public class ExamenRapido extends AppCompatActivity {
@@ -75,12 +77,12 @@ public class ExamenRapido extends AppCompatActivity {
         rR4.setText(r4);
     }
 
-    public void siguiente(View view){
+
+    public void siguiente(View view) throws InterruptedException {
         if(cont<=10) {
             pregunta = new PreguntasWebService();
             pregunta.obtenerPregunta();
             this.setText(pregunta);
-            rCorrecta = pregunta.respuesta_correcta;
             if((rR1.isChecked() && rCorrecta.equals("a")) || (rR2.isChecked() && rCorrecta.equals("b"))  || (rR3.isChecked() && rCorrecta.equals("c")) || (rR4.isChecked() && rCorrecta.equals("d")) ){
                 AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
                 dlgAlert.setMessage("Respuesta Correcta");
@@ -106,10 +108,18 @@ public class ExamenRapido extends AppCompatActivity {
                 rR3.setSelected(false);
                 rR4.setSelected(false);
             }
+            rCorrecta = pregunta.respuesta_correcta;
             cont ++;
         }else{
-            Intent i = new Intent(this,  DatoCurioso.class);
-            startActivityForResult(i, 1);
+           // Intent intent = new Intent(this,ExamenRapido.class);
+            //startActivity(intent);
+            AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
+            Respuesta.setMessage("Respuestas correctas: "+ contadorCorrecto);
+            Respuesta.setTitle("Preparate EGEL");
+            Respuesta.setPositiveButton("OK", null );
+            Respuesta.setCancelable(true);
+            Respuesta.create().show();
         }
+
     }
 }
