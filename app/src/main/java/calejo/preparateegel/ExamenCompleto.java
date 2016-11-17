@@ -105,8 +105,14 @@ public class ExamenCompleto extends AppCompatActivity {
             }
             cont ++;
         }else{
-            Intent intent = new Intent(this,Menu.class);
-            startActivity(intent);
+            // Intent intent = new Intent(this,ExamenRapido.class);
+            //startActivity(intent);
+            AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
+            Respuesta.setMessage("Respuestas correctas: "+ contadorCorrecto + "\n" + "Dato Curioso");
+            Respuesta.setTitle("Preparate EGEL");
+            Respuesta.setPositiveButton("OK", null );
+            Respuesta.setCancelable(true);
+            Respuesta.create().show();
         }
     }
 }
