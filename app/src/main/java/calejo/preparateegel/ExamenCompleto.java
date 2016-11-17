@@ -34,7 +34,7 @@ public class ExamenCompleto extends AppCompatActivity {
     void setTextInicio(PreguntasWebService pregunta){
         String preguntaA = pregunta.preguntaM;
         if (preguntaA == null || preguntaA.equals("")) {
-            Intent intent = new Intent(this,ExamenRapido.class);
+            Intent intent = new Intent(this,ExamenCompleto.class);
             startActivity(intent);
 
         }
@@ -86,6 +86,10 @@ public class ExamenCompleto extends AppCompatActivity {
                 dlgAlert.setCancelable(true);
                 dlgAlert.create().show();
                 contadorCorrecto++;
+                rR1.setSelected(false);
+                rR2.setSelected(false);
+                rR3.setSelected(false);
+                rR4.setSelected(false);
             }else {
                 AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
                 dlgAlert.setMessage("Respuesta Incorrecta");
@@ -94,6 +98,10 @@ public class ExamenCompleto extends AppCompatActivity {
                 dlgAlert.setCancelable(true);
                 dlgAlert.create().show();
                 contadorIncorrecto++;
+                rR1.setSelected(false);
+                rR2.setSelected(false);
+                rR3.setSelected(false);
+                rR4.setSelected(false);
             }
             cont ++;
         }else{

@@ -89,6 +89,10 @@ public class ExamenRapido extends AppCompatActivity {
                 dlgAlert.setCancelable(true);
                 dlgAlert.create().show();
                 contadorCorrecto++;
+                rR1.setSelected(false);
+                rR2.setSelected(false);
+                rR3.setSelected(false);
+                rR4.setSelected(false);
             }else {
                 AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
                 dlgAlert.setMessage("Respuesta Incorrecta");
@@ -97,11 +101,15 @@ public class ExamenRapido extends AppCompatActivity {
                 dlgAlert.setCancelable(true);
                 dlgAlert.create().show();
                 contadorIncorrecto++;
+                rR1.setSelected(false);
+                rR2.setSelected(false);
+                rR3.setSelected(false);
+                rR4.setSelected(false);
             }
             cont ++;
         }else{
-            Intent intent = new Intent(this,Menu.class);
-            startActivity(intent);
+            Intent i = new Intent(this,  DatoCurioso.class);
+            startActivityForResult(i, 1);
         }
     }
 }
