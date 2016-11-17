@@ -86,4 +86,5 @@
     <string name="title_activity_config">Configuración</string>
     <string name="title_activity_feedback">Feedback</string>
     <string name="Next">Continuar</string>
+    <string name="title_activity_dato_curioso">DatoCurioso</string>
 </resources>
