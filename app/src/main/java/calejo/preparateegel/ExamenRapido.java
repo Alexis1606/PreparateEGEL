@@ -1,5 +1,6 @@
 package calejo.preparateegel;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -76,10 +77,13 @@ public class ExamenRapido extends AppCompatActivity {
         rR3.setText(r3);
         rR4.setText(r4);
     }
-
+    public void salir() {
+        Intent intent = new Intent(this,Menu.class);
+        startActivity(intent);
+    }
 
     public void siguiente(View view) throws InterruptedException {
-        if(cont<=10) {
+        if(cont<=2) {
             pregunta = new PreguntasWebService();
             pregunta.obtenerPregunta();
             this.setText(pregunta);
@@ -116,7 +120,12 @@ public class ExamenRapido extends AppCompatActivity {
             AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
             Respuesta.setMessage("Respuestas correctas: "+ contadorCorrecto + "\n" + "Dato Curioso");
             Respuesta.setTitle("Preparate EGEL");
-            Respuesta.setPositiveButton("OK", null );
+           // Respuesta.setPositiveButton("OK", null );
+            Respuesta.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    salir();
+                }
+            });
             Respuesta.setCancelable(true);
             Respuesta.create().show();
         }
