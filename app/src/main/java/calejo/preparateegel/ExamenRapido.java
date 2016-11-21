@@ -83,7 +83,7 @@ public class ExamenRapido extends AppCompatActivity {
     }
 
     public void siguiente(View view) throws InterruptedException {
-        if(cont<=2) {
+        if(cont<10){
             pregunta = new PreguntasWebService();
             pregunta.obtenerPregunta();
             this.setText(pregunta);

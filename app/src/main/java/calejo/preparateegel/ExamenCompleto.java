@@ -79,7 +79,7 @@ public class ExamenCompleto extends AppCompatActivity {
     }
 
     public void siguiente(View view){
-        if(cont<=70) {
+        if(cont<70) {
             pregunta = new PreguntasWebService();
             pregunta.obtenerPregunta();
             this.setText(pregunta);

@@ -119,7 +119,8 @@ public class FullscreenActivity extends AppCompatActivity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent = new Intent(FullscreenActivity.this,Menu.class);
+                    //Intent intent = new Intent(FullscreenActivity.this,Menu.class);
+                    Intent intent = new Intent(FullscreenActivity.this,SeleccionUniversidad.class);
                     startActivity(intent);
                 }
             }
