@@ -77,6 +77,7 @@ public class ExamenRapido extends AppCompatActivity {
         rR3.setText(r3);
         rR4.setText(r4);
     }
+
     public void salir() {
         Intent intent = new Intent(this,Menu.class);
         startActivity(intent);
@@ -84,8 +85,7 @@ public class ExamenRapido extends AppCompatActivity {
 
     public void siguiente(View view) throws InterruptedException {
         if(cont<10){
-            pregunta = new PreguntasWebService();
-            pregunta.obtenerPregunta();
+
             this.setText(pregunta);
             if((rR1.isChecked() && rCorrecta.equals("a")) || (rR2.isChecked() && rCorrecta.equals("b"))  || (rR3.isChecked() && rCorrecta.equals("c")) || (rR4.isChecked() && rCorrecta.equals("d")) ){
                 AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
@@ -95,23 +95,36 @@ public class ExamenRapido extends AppCompatActivity {
                 dlgAlert.setCancelable(true);
                 dlgAlert.create().show();
                 contadorCorrecto++;
-                rR1.setSelected(false);
-                rR2.setSelected(false);
-                rR3.setSelected(false);
-                rR4.setSelected(false);
+                desseleccionar();
             }else {
                 AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
-                dlgAlert.setMessage("Respuesta Incorrecta");
+                switch(rCorrecta){
+                    case "a":
+                        dlgAlert.setMessage("Respuesta Incorrecta\nRespuesta correcta: "+pregunta.respuesta1);
+                        break;
+                    case "b":
+                        dlgAlert.setMessage("Respuesta Incorrecta\nRespuesta correcta: "+pregunta.respuesta2);
+                        break;
+                    case "c":
+                        dlgAlert.setMessage("Respuesta Incorrecta\nRespuesta correcta: "+pregunta.respuesta3);
+                        break;
+                    case "d":
+                        dlgAlert.setMessage("Respuesta Incorrecta\nRespuesta correcta: "+pregunta.respuesta4);
+                        break;
+                }
+                //dlgAlert.setMessage("Respuesta Incorrecta\nRespuesta correcta: "+rCorrecta);
                 dlgAlert.setTitle("Preparate EGEL");
                 dlgAlert.setPositiveButton("OK", null);
                 dlgAlert.setCancelable(true);
                 dlgAlert.create().show();
                 contadorIncorrecto++;
-                rR1.setSelected(false);
-                rR2.setSelected(false);
-                rR3.setSelected(false);
-                rR4.setSelected(false);
+                desseleccionar();
+
+
             }
+            pregunta = new PreguntasWebService();
+            pregunta.obtenerPregunta();
+            this.setText(pregunta);
             rCorrecta = pregunta.respuesta_correcta;
             cont ++;
         }else{
@@ -131,4 +144,13 @@ public class ExamenRapido extends AppCompatActivity {
         }
 
     }
+
+    public void desseleccionar(){
+        rR1.setChecked(false);
+        rR2.setChecked(false);
+        rR3.setChecked(false);
+        rR4.setChecked(false);
+    }
+
+
 }

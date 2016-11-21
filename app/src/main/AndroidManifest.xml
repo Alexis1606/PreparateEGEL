@@ -31,7 +31,6 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-
         <activity
             android:name=".Menu"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -43,8 +42,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".ExamenRapido"
             android:noHistory="true" />
@@ -86,7 +83,7 @@
             android:name=".DatoCurioso"
             android:label="@string/title_activity_dato_curioso"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SeleccionUniversidad"></activity>
+        <activity android:name=".SeleccionUniversidad" />
     </application>
 
 </manifest>
