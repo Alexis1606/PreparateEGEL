@@ -91,7 +91,7 @@ public class ExamenCompleto extends AppCompatActivity {
                 dlgAlert.setCancelable(true);
                 dlgAlert.create().show();
                 contadorCorrecto++;
-                
+
             }else {
                 AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
                 switch(rCorrecta){
