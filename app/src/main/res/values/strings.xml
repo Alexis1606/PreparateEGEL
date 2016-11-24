@@ -178,4 +178,8 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_examen_scroll_uvm">examen_scroll_uvm</string>
+    <string name="title_activity_examen_comp_scroll">examen_comp_scroll</string>
+    <string name="title_activity_exa_comp_scroll">exa_comp_scroll</string>
+    <string name="title_activity_examen_completo_scroll">examenCompletoScroll</string>
 </resources>

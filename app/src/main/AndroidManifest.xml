@@ -84,6 +84,14 @@
             android:label="@string/title_activity_dato_curioso"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SeleccionUniversidad" />
+        <activity
+            android:name=".examen_scroll_uvm"
+            android:label="@string/title_activity_examen_scroll_uvm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".examenCompletoScroll"
+            android:label="@string/title_activity_examen_completo_scroll"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -11,9 +11,6 @@
     tools:context="calejo.preparateegel.ExamenRapido"
     android:scrollbars="vertical"
     style="@android:style/Widget.DeviceDefault.ScrollView">
-
-
-
     <Button
         android:text="@string/Next"
         android:layout_width="wrap_content"
@@ -39,9 +36,7 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="19dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="41dp"
         android:layout_below="@+id/tPregunta"
         android:layout_alignLeft="@+id/tPregunta"
         android:layout_alignStart="@+id/tPregunta">

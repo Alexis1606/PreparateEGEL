@@ -19,12 +19,12 @@ public class Menu extends AppCompatActivity {
 
 
     public void abrirExamenRapido (View view){
-        Intent intent = new Intent(this,ExamenRapido.class);
+        Intent intent = new Intent(this,examen_scroll_uvm.class);
         startActivity(intent);
     }
 
     public void abrirExamenCompleto (View view){
-        Intent intent = new Intent(this,ExamenCompleto.class);
+        Intent intent = new Intent(this,examenCompletoScroll.class);
         startActivity(intent);
     }
     public void abrirConfiguracion (View view){
