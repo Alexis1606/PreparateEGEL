@@ -182,4 +182,6 @@
     <string name="title_activity_examen_comp_scroll">examen_comp_scroll</string>
     <string name="title_activity_exa_comp_scroll">exa_comp_scroll</string>
     <string name="title_activity_examen_completo_scroll">examenCompletoScroll</string>
+    <string name="title_activity_tec_rapido_scroll">tec_rapido_scroll</string>
+    <string name="title_activity_tec__completo__scroll">tec_Completo_Scroll</string>
 </resources>
