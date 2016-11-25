@@ -32,8 +32,8 @@ public class Menu extends AppCompatActivity {
         startActivity(intent);
     }
     public void abrirFeedback (View view){
-        Intent intent = new Intent(this,Retro.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(this,Retro.class);
+        startActivity(intent2);
     }
 
 }
