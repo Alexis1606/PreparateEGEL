@@ -18,11 +18,10 @@ android:background="@color/azulTec">
     android:layout_height="wrap_content"
     android:layout_marginTop="163dp"
     android:id="@+id/bRapido"
-    android:layout_alignParentTop="true"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
-    android:onClick = "abrirExamenRapido"
-    android:background="@drawable/boto_rapido" />
+    android:background="@drawable/boto_rapido"
+    android:onClick="abrirExamenRapido" />
 
 <Button
     android:layout_width="match_parent"

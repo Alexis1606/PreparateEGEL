@@ -90,7 +90,7 @@ android:background="@color/azulTec">
         android:layout_alignParentStart="true"
         android:layout_marginLeft="34dp"
         android:layout_marginStart="34dp"
-        android:id="@+id/textView4"
+        android:id="@+id/tPregunta"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
 </RelativeLayout>

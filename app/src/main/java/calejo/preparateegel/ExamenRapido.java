@@ -131,7 +131,7 @@ public class ExamenRapido extends AppCompatActivity {
            // Intent intent = new Intent(this,ExamenRapido.class);
             //startActivity(intent);
             AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
-            Respuesta.setMessage("Respuestas correctas: "+ contadorCorrecto + "\n" + "Dato Curioso");
+            Respuesta.setMessage("Respuestas correctas: "+ contadorCorrecto );
             Respuesta.setTitle("Preparate EGEL");
            // Respuesta.setPositiveButton("OK", null );
             Respuesta.setPositiveButton("OK", new DialogInterface.OnClickListener() {

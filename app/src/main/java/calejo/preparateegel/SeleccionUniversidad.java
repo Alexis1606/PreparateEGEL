@@ -18,7 +18,7 @@ public class SeleccionUniversidad extends AppCompatActivity {
         startActivity(intent);
     }
     public void menuTEC (View view){
-        //Intent intent = new Intent(this,MenuTec.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this,menuTec.class);
+        startActivity(intent);
     }
 }

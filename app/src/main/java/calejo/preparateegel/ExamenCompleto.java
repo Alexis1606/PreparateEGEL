@@ -127,7 +127,7 @@ public class ExamenCompleto extends AppCompatActivity {
         }else{
 
             AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
-            Respuesta.setMessage("Respuestas correctas: "+ contadorCorrecto + "\n" + "Dato Curioso");
+            Respuesta.setMessage("Respuestas correctas: "+ contadorCorrecto);
             Respuesta.setTitle("Preparate EGEL");
             // Respuesta.setPositiveButton("OK", null );
             Respuesta.setPositiveButton("OK", new DialogInterface.OnClickListener() {
