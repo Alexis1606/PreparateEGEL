@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_menu"
     android:layout_width="match_parent"
@@ -8,10 +9,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="calejo.preparateegel.Menu">
+    tools:context="calejo.preparateegel.Menu"
+    android:backgroundTint="@color/rojoUVM"
+    android:background="@color/rojoUVM">
 
     <Button
-        android:text="@string/B_Examen_Rápido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="163dp"
@@ -19,10 +21,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick = "abrirExamenRapido"/>
+        android:onClick = "abrirExamenRapido"
+        android:background="@drawable/boto_rapido" />
 
     <Button
-        android:text="@string/b_Examen_Completo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bRapido"
@@ -30,10 +32,10 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="37dp"
         android:id="@+id/bCompleto"
-        android:onClick = "abrirExamenCompleto"/>
+        android:onClick = "abrirExamenCompleto"
+        android:background="@drawable/boton_completo" />
 
     <Button
-        android:text="@string/b_Configuracion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bCompleto"
@@ -41,10 +43,10 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="34dp"
         android:id="@+id/bConfig"
-        android:onClick = "abrirConfiguracion"/>
+        android:onClick = "abrirConfiguracion"
+        android:background="@drawable/boto_configuracion" />
 
     <Button
-        android:text="@string/b_feedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bConfig"
@@ -52,5 +54,14 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="22dp"
         android:id="@+id/bFeed"
-        android:onClick="abrirFeedback"/>
+        android:onClick="abrirFeedback"
+        android:background="@drawable/boton_feedback" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/uvm"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
