@@ -99,7 +99,8 @@
         <activity
             android:name=".tec_Completo_Scroll"
             android:label="@string/title_activity_tec__completo__scroll"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".menuTec"></activity>
     </application>
 
 </manifest>
