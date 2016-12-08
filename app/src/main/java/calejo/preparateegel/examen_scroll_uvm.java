@@ -20,6 +20,7 @@ public class examen_scroll_uvm extends AppCompatActivity {
     RadioButton rR2;
     RadioButton rR3;
     RadioButton rR4;
+    RadioButton rR5;
     int contadorCorrecto = 0;
     int contadorIncorrecto = 0;
 
@@ -52,6 +53,7 @@ public class examen_scroll_uvm extends AppCompatActivity {
         RadioButton rR2 = (RadioButton)findViewById(R.id.rR2);
         RadioButton rR3 = (RadioButton)findViewById(R.id.rR3);
         RadioButton rR4 = (RadioButton)findViewById(R.id.rR4);
+        RadioButton rR5 = (RadioButton) findViewById(R.id.rR5);
         try{
             tPregunta.setText(preguntaA);
         }catch(Exception ex){
@@ -75,6 +77,7 @@ public class examen_scroll_uvm extends AppCompatActivity {
         rR2 = (RadioButton)findViewById(R.id.rR2);
         rR3 = (RadioButton)findViewById(R.id.rR3);
         rR4 = (RadioButton)findViewById(R.id.rR4);
+        rR5 = (RadioButton) findViewById(R.id.rR5);
         tPregunta.setText(preguntaA);
         rR1.setText(r1);
         rR2.setText(r2);
@@ -150,10 +153,23 @@ public class examen_scroll_uvm extends AppCompatActivity {
     }
 
     public void desseleccionar(){
+
+        /*
         rR1.setChecked(false);
         rR2.setChecked(false);
         rR3.setChecked(false);
         rR4.setChecked(false);
+        */
+        rR5.setVisibility(View.VISIBLE);
+        rR5.setChecked(true);
+       /* rR1.setSelected(false);
+        rR2.setSelected(false);
+        rR3.setSelected(false);
+        rR4.setSelected(false);
+        */
+        rR5.setSelected(true);
+
+        rR5.setVisibility(View.INVISIBLE);
     }
 
 
