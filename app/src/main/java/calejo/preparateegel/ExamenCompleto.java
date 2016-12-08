@@ -146,6 +146,10 @@ public class ExamenCompleto extends AppCompatActivity {
         rR2.setChecked(false);
         rR3.setChecked(false);
         rR4.setChecked(false);
+
+
+
+
     }
 
 }

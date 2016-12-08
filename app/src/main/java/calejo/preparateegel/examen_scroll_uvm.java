@@ -168,7 +168,6 @@ public class examen_scroll_uvm extends AppCompatActivity {
         rR4.setSelected(false);
         */
         rR5.setSelected(true);
-
         rR5.setVisibility(View.INVISIBLE);
     }
 
