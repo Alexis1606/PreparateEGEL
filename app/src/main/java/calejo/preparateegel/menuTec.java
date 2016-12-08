@@ -32,7 +32,7 @@ public class menuTec extends AppCompatActivity {
     }
 
     public void abrirExamenCompleto (View view){
-        final Intent intent = new Intent(this,tec_Completo_Scroll.class);
+        final Intent intent = new Intent(this,defteccompleto.class);
         AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
         Respuesta.setMessage("Este modo incluye 70 preguntas a contestar");
         Respuesta.setTitle("Examen Completo");

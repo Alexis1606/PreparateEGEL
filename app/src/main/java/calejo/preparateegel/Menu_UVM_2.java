@@ -16,7 +16,7 @@ public class Menu_UVM_2 extends AppCompatActivity {
     }
 
     public void abrirExamenRapido (View view){
-        final Intent intent = new Intent(this,examenrapidouvm2.class);
+        final Intent intent = new Intent(this,defuvm2rapido.class);
         AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
         Respuesta.setMessage("Este modo incluye 10 preguntas a contestar");
         Respuesta.setTitle("Examen Rápido");
@@ -32,7 +32,7 @@ public class Menu_UVM_2 extends AppCompatActivity {
     }
 
     public void abrirExamenCompleto (View view){
-        final Intent intent = new Intent(this,examenCompletoScroll.class);
+        final Intent intent = new Intent(this,defuvm2completo.class);
         AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
         Respuesta.setMessage("Este modo incluye 70 preguntas a contestar");
         Respuesta.setTitle("Examen Completo");

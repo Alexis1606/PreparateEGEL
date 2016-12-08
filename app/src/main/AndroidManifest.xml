@@ -137,10 +137,21 @@
             android:label="@string/title_activity_examencompletouvm2"
             android:noHistory="true"
             android:theme="@style/AppTheme.UVM" />
-        <activity android:name=".deftecrapido"
+        <activity
+            android:name=".deftecrapido"
             android:noHistory="true"
-            android:theme="@style/AppTheme.Tec"
-            ></activity>
+            android:theme="@style/AppTheme.Tec" />
+        <activity
+            android:name=".defteccompleto"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Tec" />
+        <activity
+            android:name=".defuvm2rapido"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.UVM" />
+        <activity android:name=".defuvm2completo"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.UVM" ></activity>
     </application>
 
 </manifest>
