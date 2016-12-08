@@ -13,54 +13,53 @@ tools:context="calejo.preparateegel.menuTec"
 android:backgroundTint="@color/azulTec"
 android:background="@color/azulTec">
 
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="163dp"
-    android:id="@+id/bRapido"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:background="@drawable/boto_rapido"
-    android:onClick="abrirExamenRapido" />
-
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/bRapido"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginTop="37dp"
-    android:id="@+id/bCompleto"
-    android:onClick = "abrirExamenCompleto"
-    android:background="@drawable/boton_completo" />
-
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/bCompleto"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginTop="34dp"
-    android:id="@+id/bConfig"
-    android:onClick = "abrirConfiguracion"
-    android:background="@drawable/boto_configuracion" />
-
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/bConfig"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginTop="22dp"
-    android:id="@+id/bFeed"
-    android:onClick="abrirFeedback"
-    android:background="@drawable/boton_feedback" />
-
-<ImageView
+    <ImageView
     android:layout_width="150dp"
     android:layout_height="150dp"
     app:srcCompat="@drawable/tec"
     android:id="@+id/imageView"
     android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bRapido"
+        android:background="@drawable/boto_rapido"
+        android:onClick="abrirExamenRapido"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bCompleto"
+        android:onClick = "abrirExamenCompleto"
+        android:background="@drawable/boton_completo"
+        android:layout_below="@+id/bRapido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/bConfig"
+    android:onClick = "abrirConfiguracion"
+    android:background="@drawable/boto_configuracion"
+        android:layout_below="@+id/bCompleto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/bFeed"
+    android:onClick="abrirFeedback"
+    android:background="@drawable/boton_feedback"
+        android:layout_below="@+id/bConfig"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
