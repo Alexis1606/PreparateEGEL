@@ -6,8 +6,8 @@
 
     <string name="title_activity_menu">Menu</string>
     <string name="Menu">Menu</string>
-    <string name="B_Examen_Rápido">Exámen Rápido</string>
-    <string name="b_Examen_Completo">Exámen Completo</string>
+    <string name="B_Examen_Rápido">Examen Rápido</string>
+    <string name="b_Examen_Completo">Examen Completo</string>
     <string name="b_Configuracion">Configuración</string>
     <string name="b_feedback">Feedback</string>
     <string name="title_activity_configuracion">Configuración</string>
@@ -178,12 +178,12 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_examen_scroll_uvm">examen_scroll_uvm</string>
-    <string name="title_activity_examen_comp_scroll">examen_comp_scroll</string>
-    <string name="title_activity_exa_comp_scroll">exa_comp_scroll</string>
-    <string name="title_activity_examen_completo_scroll">examenCompletoScroll</string>
-    <string name="title_activity_tec_rapido_scroll">tec_rapido_scroll</string>
-    <string name="title_activity_tec__completo__scroll">tec_Completo_Scroll</string>
-    <string name="title_activity_config_scroll">ConfigScroll</string>
-    <string name="title_activity_acerca_de_scroll">AcercaDeScroll</string>
+    <string name="title_activity_examen_scroll_uvm">Examen rápido</string>
+    <string name="title_activity_examen_comp_scroll">Examen competo</string>
+    <string name="title_activity_exa_comp_scroll">Examen Completo</string>
+    <string name="title_activity_examen_completo_scroll">Examen completo</string>
+    <string name="title_activity_tec_rapido_scroll">Examen rápido</string>
+    <string name="title_activity_tec__completo__scroll">Examen completo</string>
+    <string name="title_activity_config_scroll">Configuracion</string>
+    <string name="title_activity_acerca_de_scroll">Acerca de</string>
 </resources>

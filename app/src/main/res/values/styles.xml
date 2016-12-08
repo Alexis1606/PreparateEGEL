@@ -34,4 +34,9 @@
         <item name="colorPrimaryDark">@color/rojoUVM</item>
         <item name="colorAccent">@color/rojoUVM</item>
     </style>
+    <style name = "AppTheme.Tec">
+        <item name="colorPrimary">@color/azulTec</item>
+        <item name="colorPrimaryDark">@color/azulTec</item>
+        <item name="colorAccent">@color/azulTec</item>
+    </style>
 </resources>

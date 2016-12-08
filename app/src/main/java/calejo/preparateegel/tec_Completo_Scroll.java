@@ -75,7 +75,7 @@ public class tec_Completo_Scroll extends AppCompatActivity {
     }
 
     public void salir() {
-        Intent intent = new Intent(this,Menu.class);
+        Intent intent = new Intent(this,menuTec.class);
         startActivity(intent);
     }
 

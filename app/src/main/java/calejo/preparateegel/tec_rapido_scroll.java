@@ -79,7 +79,7 @@ public class tec_rapido_scroll extends AppCompatActivity {
     }
 
     public void salir() {
-        Intent intent = new Intent(this, Menu.class);
+        Intent intent = new Intent(this, menuTec.class);
         startActivity(intent);
     }
 
