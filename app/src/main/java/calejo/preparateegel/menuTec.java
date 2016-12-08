@@ -23,7 +23,7 @@ public class menuTec extends AppCompatActivity {
         startActivity(intent);
     }
     public void abrirConfiguracion (View view){
-        Intent intent = new Intent(this,Config.class);
+        Intent intent = new Intent(this,ConfigScroll.class);
         startActivity(intent);
     }
     public void abrirFeedback (View view){

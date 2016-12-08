@@ -1,0 +1,53 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="calejo.preparateegel.ConfigScroll"
+tools:showIn="@layout/activity_config_scroll"
+android:backgroundTint="@color/rojoUVM"
+android:background="@color/rojoUVM">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="300px"
+    android:backgroundTint="@color/rojoUVM"
+    android:background="@color/rojoUVM"
+    >
+
+
+    <Button
+        android:text="Acerca de"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:id="@+id/button7"
+        android:onClick="Acerca"
+        android:textAlignment="textStart"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/bCambio"
+        android:layout_alignLeft="@+id/bCambio"
+        android:layout_alignStart="@+id/bCambio" />
+
+    <Button
+        android:text="Cambio Universidad"
+        android:layout_width="match_parent"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/azulTec"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:id="@+id/bCambio"
+        tools:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="Cambio"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

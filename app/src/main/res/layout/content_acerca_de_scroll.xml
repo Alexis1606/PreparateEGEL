@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="calejo.preparateegel.AcercaDeScroll"
+    tools:showIn="@layout/activity_acerca_de_scroll">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="Esta aplicación te ayudara a repasar preguntas muy relacionadas y parecidas con las que te encontraras en el examen EGEL.
+
+        Autores:
+
+        Flores Arzate Carlos ALberto
+        Miranda Mendoza José Ignacio
+        Romero Mora Juan Alexis" />
+
+</android.support.v4.widget.NestedScrollView>
