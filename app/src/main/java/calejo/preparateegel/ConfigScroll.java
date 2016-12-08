@@ -13,7 +13,7 @@ public class ConfigScroll extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_config_scroll);
+        setContentView(R.layout.content_config_scroll);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -26,7 +26,7 @@ public class ConfigScroll extends AppCompatActivity {
     }
 
     public void Acerca (View view){
-        Intent intent = new Intent(this,AcercaDeScroll.class);
+        Intent intent = new Intent(this,Acerca.class);
         startActivity(intent);
     }
 }

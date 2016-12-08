@@ -109,10 +109,12 @@
             android:name=".ConfigScroll"
             android:label="@string/title_activity_config_scroll"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".AcercaDeScroll"
-            android:label="@string/title_activity_acerca_de_scroll"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="Acerca de"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Acerca"></activity>
     </application>
 
 </manifest>

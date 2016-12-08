@@ -7,15 +7,43 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:context="calejo.preparateegel.ConfigScroll"
 tools:showIn="@layout/activity_config_scroll"
 android:backgroundTint="@color/rojoUVM"
-android:background="@color/rojoUVM">
+android:background="@color/common_google_signin_btn_text_dark_default">
 
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="300px"
-    android:backgroundTint="@color/rojoUVM"
-    android:background="@color/rojoUVM"
+    android:layout_height="400px"
+    android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+    android:background="@color/common_google_signin_btn_text_dark_default"
     >
 
+
+    <TextView
+        android:text="Configuración"
+        android:layout_width="wrap_content"
+        android:textSize="11pt"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/bCambio"
+        android:layout_alignStart="@+id/bCambio"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/textView4" />
+
+    <Button
+        android:text="Cambio Universidad"
+        android:layout_width="match_parent"
+        android:shadowColor="@color/azulTec"
+        android:layout_height="wrap_content"
+        android:textAlignment="inherit"
+        android:id="@+id/bCambio"
+        android:textStyle="bold"
+        tools:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="Cambio"
+        android:background="@android:drawable/bottom_bar"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
 
     <Button
         android:text="Acerca de"
@@ -23,29 +51,12 @@ android:background="@color/rojoUVM">
         android:layout_height="wrap_content"
         tools:backgroundTint="@color/common_google_signin_btn_text_dark_default"
         android:id="@+id/button7"
+        android:textStyle="bold"
         android:onClick="Acerca"
-        android:textAlignment="textStart"
-        android:background="@android:color/transparent"
+        android:background="@android:drawable/bottom_bar"
         android:layout_below="@+id/bCambio"
-        android:layout_alignLeft="@+id/bCambio"
-        android:layout_alignStart="@+id/bCambio" />
-
-    <Button
-        android:text="Cambio Universidad"
-        android:layout_width="match_parent"
-        android:textAlignment="textStart"
-        android:shadowColor="@color/azulTec"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:id="@+id/bCambio"
-        tools:backgroundTint="@color/common_google_signin_btn_text_dark_default"
-        android:onClick="Cambio"
-        android:background="@android:color/transparent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp" />
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
