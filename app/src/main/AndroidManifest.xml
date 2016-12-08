@@ -54,8 +54,7 @@
         <activity
             android:name=".Retro"
             android:label="Feedback"
-            android:theme="@style/AppTheme.UVM"
-            />
+            android:theme="@style/AppTheme.UVM" />
         <activity
             android:name=".Sorpresa"
             android:noHistory="true">
@@ -87,7 +86,9 @@
             android:name=".DatoCurioso"
             android:label="@string/title_activity_dato_curioso"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SeleccionUniversidad" />
+        <activity android:name=".SeleccionUniversidad"
+            android:label="Selecciona tu Universidad"/>
+
         <activity
             android:name=".examen_scroll_uvm"
             android:label="@string/title_activity_examen_scroll_uvm"
@@ -102,12 +103,11 @@
             android:name=".tec_rapido_scroll"
             android:label="@string/B_Examen_Rápido"
             android:noHistory="true"
-            android:theme="@style/AppTheme.Tec"
-            />
+            android:theme="@style/AppTheme.Tec" />
         <activity
             android:name=".tec_Completo_Scroll"
             android:label="@string/title_activity_tec__completo__scroll"
-            android:theme="@style/AppTheme.Tec"/>
+            android:theme="@style/AppTheme.Tec" />
         <activity
             android:name=".menuTec"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -115,12 +115,26 @@
             android:name=".ConfigScroll"
             android:label="@string/title_activity_config_scroll"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".AcercaDeScroll"
             android:label="Acerca de"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Acerca"></activity>
+        <activity android:name=".Acerca" />
+        <activity
+            android:name=".Retro_tec"
+            android:label="Feedback"
+            android:theme="@style/AppTheme.Tec" />
+        <activity android:name=".Menu_UVM_2"
+            android:theme="@style/AppTheme.UVM"
+            android:label=" "/>
+        <activity
+            android:name=".examenrapidouvm2"
+            android:label="@string/title_activity_examenrapidouvm2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".examencompletouvm2"
+            android:label="@string/title_activity_examencompletouvm2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -29,7 +29,7 @@ public class tec_rapido_scroll extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_examen_rapido);
+        setContentView(R.layout.content_tec_rapido_scroll);
 
         pregunta = new PreguntasWebService();
         pregunta.obtenerPregunta();

@@ -21,4 +21,9 @@ public class SeleccionUniversidad extends AppCompatActivity {
         Intent intent = new Intent(this,menuTec.class);
         startActivity(intent);
     }
+
+    public void menuUVM2 (View view){
+        Intent intent = new Intent(this,Menu_UVM_2.class);
+        startActivity(intent);
+    }
 }

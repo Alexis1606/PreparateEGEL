@@ -48,7 +48,7 @@ public class Menu extends AppCompatActivity {
         });
         Respuesta.setNegativeButton("Cancelar",null);
         Respuesta.setCancelable(true);
-        Respuesta.create().show();
+       Respuesta.create().show();
         //startActivity(intent);
     }
     public void abrirConfiguracion (View view){

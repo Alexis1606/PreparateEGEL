@@ -29,12 +29,13 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name = "AppTheme.UVM">
+    <style name="AppTheme.UVM">
         <item name="colorPrimary">@color/rojoUVM</item>
         <item name="colorPrimaryDark">@color/rojoUVM</item>
         <item name="colorAccent">@color/rojoUVM</item>
     </style>
-    <style name = "AppTheme.Tec">
+
+    <style name="AppTheme.Tec">
         <item name="colorPrimary">@color/azulTec</item>
         <item name="colorPrimaryDark">@color/azulTec</item>
         <item name="colorAccent">@color/azulTec</item>

@@ -7,16 +7,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class menuTec extends AppCompatActivity {
+public class Menu_UVM_2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_tec);
+        setContentView(R.layout.activity_menu__uvm_2);
     }
 
     public void abrirExamenRapido (View view){
-        final Intent intent = new Intent(this,tec_rapido_scroll.class);
+        final Intent intent = new Intent(this,examenrapidouvm2.class);
         AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
         Respuesta.setMessage("Este modo incluye 10 preguntas a contestar");
         Respuesta.setTitle("Examen Rápido");
@@ -32,7 +32,7 @@ public class menuTec extends AppCompatActivity {
     }
 
     public void abrirExamenCompleto (View view){
-        final Intent intent = new Intent(this,tec_Completo_Scroll.class);
+        final Intent intent = new Intent(this,examenCompletoScroll.class);
         AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
         Respuesta.setMessage("Este modo incluye 70 preguntas a contestar");
         Respuesta.setTitle("Examen Completo");
@@ -51,9 +51,7 @@ public class menuTec extends AppCompatActivity {
         startActivity(intent);
     }
     public void abrirFeedback (View view){
-        Intent intent = new Intent(this,Retro_tec.class);
+        Intent intent = new Intent(this,Retro.class);
         startActivity(intent);
     }
-
-
 }
