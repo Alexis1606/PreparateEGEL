@@ -47,9 +47,6 @@ public class Retro extends AppCompatActivity {
         editTextComentario = (EditText)findViewById(R.id.Comentario);
 
         buttonSubmit = (Button)findViewById(R.id.button2);
-        Feliz = (ImageButton)findViewById(R.id.Feliz);
-        Serio = (ImageButton)findViewById(R.id.Serio);
-        Triste = (ImageButton)findViewById(R.id.Triste);
 
 
         buttonSubmit.setOnClickListener(new View.OnClickListener() {

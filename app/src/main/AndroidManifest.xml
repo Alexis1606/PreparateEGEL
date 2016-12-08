@@ -51,7 +51,11 @@
         <activity
             android:name=".Config"
             android:label="@string/title_activity_config" />
-        <activity android:name=".Retro" />
+        <activity
+            android:name=".Retro"
+            android:label="Feedback"
+            android:theme="@style/AppTheme.UVM"
+            />
         <activity
             android:name=".Sorpresa"
             android:noHistory="true">

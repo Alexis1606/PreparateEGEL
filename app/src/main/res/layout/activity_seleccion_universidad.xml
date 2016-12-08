@@ -32,7 +32,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="calejo.preparateegel.SeleccionUniversidad"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <!--android:id="@+id/activity_seleccion_universidad"-->
 
@@ -54,11 +54,18 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/bTec"
-        android:layout_marginBottom="26dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginLeft="82dp"
-        android:layout_marginRight="26dp"
         android:background="@drawable/tec"
         android:onClick="menuTEC" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bUvm2"
+        android:background="@drawable/uvm"
+        android:onClick="menuUVM2" />
 </LinearLayout>
 </LinearLayout>
