@@ -5,13 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="calejo.preparateegel.examencompletouvm2"
-    tools:showIn="@layout/activity_examencompletouvm2">
+    tools:context="calejo.preparateegel.tec_Completo_Scroll"
+    tools:showIn="@layout/activity_tec__completo__scroll"
+    android:backgroundTint="@color/azulTec"
+    android:background="@color/azulTec">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
-        android:background="@color/common_google_signin_btn_text_dark_default">
+        android:backgroundTint="@color/azulTec"
+        android:background="@color/azulTec">
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -77,8 +80,7 @@
             android:layout_alignParentEnd="true"
             android:layout_below="@id/rg"
             android:id="@+id/bNext"
-            tools:backgroundTint="@color/common_google_signin_btn_text_dark_default"
-            android:onClick="siguiente" />
+            tools:backgroundTint="@color/common_google_signin_btn_text_dark_default" />
 
         <TextView
             android:text="TextView"
@@ -92,4 +94,5 @@
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     </RelativeLayout>
+
 </android.support.v4.widget.NestedScrollView>

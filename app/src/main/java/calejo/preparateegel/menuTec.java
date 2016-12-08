@@ -16,7 +16,7 @@ public class menuTec extends AppCompatActivity {
     }
 
     public void abrirExamenRapido (View view){
-        final Intent intent = new Intent(this,tec_rapido_scroll.class);
+        final Intent intent = new Intent(this,deftecrapido.class);
         AlertDialog.Builder Respuesta  = new AlertDialog.Builder(this);
         Respuesta.setMessage("Este modo incluye 10 preguntas a contestar");
         Respuesta.setTitle("Examen Rápido");
