@@ -69,6 +69,16 @@
             android:id="@+id/rR4"
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/rg"
+            android:layout_alignStart="@+id/rg"
+            android:id="@+id/rR5" />
+
+
     </RadioGroup>
 
         <Button
@@ -94,14 +104,6 @@
             android:id="@+id/tPregunta"
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
-        <RadioButton
-            android:text="RadioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignLeft="@+id/rg"
-            android:layout_alignStart="@+id/rg"
-            android:id="@+id/rR5" />
 
     </RelativeLayout>
 
